@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastack = "*"
+{% if cookiecutter.use_sqlmodel == "y" -%}
+fastack-sqlmodel = "*"
+fastack-migrate = "*"
+psycopg2-binary = "*"
+{%- endif %}
+{% if cookiecutter.use_mongoengine == "y" -%}
+fastack-mongoengine = "*"
+{%- endif %}
+{% if cookiecutter.use_cache == "y" -%}
+fastack-cache = "*"
+{%- endif %}
+
+[dev-packages]
+{% if cookiecutter.use_pre_commit == "y" -%}
+pre-commit = "*"
+{%- endif %}
+
+[requires]
+python_version = "{{cookiecutter.python_version}}"

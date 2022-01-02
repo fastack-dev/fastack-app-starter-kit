@@ -1,0 +1,12 @@
+{
+    "project_name": "Super App",
+    "project_description": "This is a super app",
+    "author_name": "Aprila Hijriyan",
+    "author_email": "hijriyan23@gmail.com",
+    "use_docker": "y",
+    "use_pre_commit": "y",
+    "use_sqlmodel": "y",
+    "use_mongoengine": "n",
+    "use_cache": "y",
+    "python_version": ["3.7", "3.8", "3.9"]
+}
